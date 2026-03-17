@@ -60,60 +60,67 @@
 
   <section class="fixed inset-0 bg-black/40 -z-10"></section>
 
-  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-navy-dark/60 border-b border-gold/20">
+ <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-navy-dark/60 border-b border-gold/20">
 
-    <nav class="w-full px-4 h-20 flex items-center justify-between">
+  <nav class="w-full px-4 h-20 flex items-center justify-between">
 
-      <a href="index.html"
-        class="font-sports text-4xl tracking-wide text-white hover:text-gold transition-all duration-300">
-        CRICKET <span class="text-gold">Formats</span>
-      </a>
+  <a href="index.html"
+    class="font-sports text-4xl tracking-wide text-white hover:text-gold transition-all duration-300">
+    CRICKET <span class="text-gold">Formats</span>
+  </a>
 
+ 
+  <section class="hidden md:flex items-center gap-6 ml-auto">
 
-      <section class="hidden md:flex items-center gap-6 ml-auto">
+    <a href="index.html"
+     class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
+      Home
+    </a>
 
-        <a href="index.html" class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
-          Home
-        </a>
+    <a href="formats.html"
+      class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
+      Formats
+    </a>
 
-        <a href="formats.html" class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
-          Formats
-        </a>
+    <a href="players.html"
+      class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
+      Players
+    </a>
 
-        <a href="players.html" class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
-          Players
-        </a>
+    <a href="gallery.html"
+     class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
+      Gallery
+    </a>
 
-        <a href="gallery.html" class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
-          Gallery
-        </a>
+    <a href="legacy.html"
+     class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
+      Legacy
+    </a>
 
-        <a href="legacy.html" class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
-          Legacy
-        </a>
+  </section>
 
+      <!-- Mobile Menu -->
+      <section class="dropdown dropdown-end md:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-navy-dark border border-gold/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+          <li><a href="index.html" class="py-3 hover:text-gold active:bg-gold/10">Home</a></li>
+          <li><a href="formats.html" class="py-3 hover:text-gold active:bg-gold/10 text-gold">Formats</a></li>
+          <li><a href="players.html" class="py-3 hover:text-gold active:bg-gold/10">Players</a></li>
+          <li><a href="gallery.html" class="py-3 hover:text-gold active:bg-gold/10">Gallery</a></li>
+          <li><a href="legacy.html" class="py-3 hover:text-gold active:bg-gold/10">Legacy</a></li>
+        </ul>
       </section>
 
     </nav>
-
-    <section
-      class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent">
-    </section>
-
-  </header>
-
-  <button class="md:hidden btn btn-ghost btn-circle text-gold border border-gold/20">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-    </svg>
-  </button>
-  </nav>
-  <section class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent">
-  </section>
+    <section class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent"></section>
   </header>
 
   <main class="min-h-screen pt-12">
-
+  
     <section class="relative h-[40vh] flex flex-col items-center justify-center overflow-hidden">
       <section class="absolute inset-0 bg-navy-dark/30 backdrop-blur-[1px]"></section>
       <section class="relative z-10 text-center animate-fade-in-up">
@@ -128,7 +135,7 @@
     <section class="max-w-7xl mx-auto px-6 lg:px-12 py-20 relative z-30">
       <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
 
-
+        
         <a href="test.html" class="group block animate-fade-in-up opacity-0 cursor-pointer"
           style="animation-delay: 1.0s; animation-fill-mode: forwards;">
           <article
@@ -146,7 +153,7 @@
           </article>
         </a>
 
-
+       
         <a href="odi.html" class="group block animate-fade-in-up opacity-0 cursor-pointer"
           style="animation-delay: 2.0s; animation-fill-mode: forwards;">
           <article
@@ -164,7 +171,7 @@
           </article>
         </a>
 
-
+    
         <a href="t20.html" class="group block animate-fade-in-up opacity-0 cursor-pointer"
           style="animation-delay: 3.0s; animation-fill-mode: forwards;">
           <article
@@ -205,33 +212,32 @@
 
   <footer class="relative bg-navy-dark/90 backdrop-blur-md py-16 px-6 border-t border-gold/20">
 
+  
+  <section class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></section>
 
-    <section class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent">
-    </section>
+  <section class="max-w-4xl mx-auto text-center">
 
-    <section class="max-w-4xl mx-auto text-center">
+   
+    <h2 class="font-sports text-5xl text-white mb-6 tracking-wide">
+      CRICKET <span class="text-gold">Formats</span>
+    </h2>
 
+  
+    <p class="text-white/60 italic text-lg leading-relaxed max-w-2xl mx-auto">
+      "Cricket is more than just a game.  
+      It is patience, passion, and pride played between the boundary lines."
+    </p>
 
-      <h2 class="font-sports text-5xl text-white mb-6 tracking-wide">
-        CRICKET <span class="text-gold">Formats</span>
-      </h2>
+    <section class="w-24 h-[2px] bg-gold mx-auto my-10"></section>
 
+  
+    <p class="text-xs tracking-[0.4em] text-white/30 uppercase">
+      @ 20345 Cricket Formats
+    </p>
 
-      <p class="text-white/60 italic text-lg leading-relaxed max-w-2xl mx-auto">
-        "Cricket is more than just a game.
-        It is patience, passion, and pride played between the boundary lines."
-      </p>
+  </section>
 
-      <section class="w-24 h-[2px] bg-gold mx-auto my-10"></section>
-
-
-      <p class="text-xs tracking-[0.4em] text-white/30 uppercase">
-        @ 20345 Cricket Formats
-      </p>
-
-    </section>
-
-  </footer>
+</footer>
 </body>
 
 </html>

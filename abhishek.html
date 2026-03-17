@@ -18,27 +18,6 @@
       -webkit-text-stroke: 1px rgba(255, 215, 0, 0.3);
       color: transparent;
     }
-    @media (max-width: 767px) {
-      header {
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 1rem !important;
-        gap: 0.75rem !important;
-      }
-      header nav.hidden.md\:block {
-        display: block !important;
-        width: 100% !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-        padding-top: 0.5rem !important;
-      }
-      header nav ul {
-        flex-direction: row !important;
-        justify-content: center !important;
-        gap: 1.25rem !important;
-        overflow-x: auto !important;
-        white-space: nowrap !important;
-      }
-    }
   </style>
   <script>
     tailwind.config = {
@@ -78,15 +57,31 @@
       THE <span class="text-white">PERSONNEL</span><span
         class="text-stadium-gold underline decoration-1 underline-offset-4">LOG</span>
     </a>
-    <nav class="hidden md:block">
+        <nav class="hidden md:block">
       <ul class="flex space-x-10 text-[10px] font-black tracking-[0.4em] uppercase">
         <li><a href="index.html" class="hover:text-stadium-gold transition-colors">Home</a></li>
         <li><a href="formats.html" class="hover:text-stadium-gold transition-colors">Formats</a></li>
         <li><a href="players.html" class="text-stadium-gold underline decoration-2 underline-offset-8">Players</a></li>
         <li><a href="gallery.html" class="hover:text-stadium-gold transition-colors">Gallery</a></li>
-        <li><a href="quiz.html" class="hover:text-stadium-gold transition-colors">Quiz</a></li>
+        <li><a href="legacy.html" class="hover:text-stadium-gold transition-colors">Legacy</a></li>
       </ul>
     </nav>
+
+    <!-- Mobile Menu -->
+    <section class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle text-stadium-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-stadium-black border border-stadium-gold/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+        <li><a href="index.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Home</a></li>
+        <li><a href="formats.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Formats</a></li>
+        <li><a href="players.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10 text-stadium-gold">Players</a></li>
+        <li><a href="gallery.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Gallery</a></li>
+        <li><a href="legacy.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Legacy</a></li>
+      </ul>
+    </section>
   </header>
 
   <main>
@@ -196,7 +191,7 @@
         </section>
         <section class="space-y-6">
           <a href="gallery.html" class="block hover:text-white transition-colors">Visual Node</a>
-          <a href="quiz.html" class="block hover:text-white transition-colors">Quiz Intel</a>
+          <a href="legacy.html" class="block hover:text-white transition-colors">Legacy Intel</a>
           <a href="#" class="block hover:text-white transition-colors">Legal Sync</a>
         </section>
       </nav>

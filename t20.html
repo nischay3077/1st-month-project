@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The T20 Dossier | Cricket Universe Documentary</title>
-
+  
   <script src="https://cdn.tailwindcss.com"></script>
-
+  
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700;900&display=swap"
@@ -31,7 +31,7 @@
           colors: {
             stadium: {
               black: '#050505',
-              crimson: '#E11D48',
+              crimson: '#E11D48', 
               gray: '#1A1A1A',
             }
           },
@@ -62,12 +62,12 @@
     <source src="test.mp4" type="video/mp4">
   </video>
 
-
+ 
   <section class="fixed inset-0 bg-gradient-to-b from-stadium-black/80 via-transparent to-stadium-black/90 -z-20">
   </section>
   <section class="fixed inset-0 bg-stadium-black/40 -z-10"></section>
 
-
+ 
   <header
     class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center transition-all bg-stadium-black/20 backdrop-blur-sm border-b border-white/5">
     <a href="index.html"
@@ -75,20 +75,35 @@
       THE <span class="text-white group-hover:text-white transition-colors">T20</span><span
         class="text-stadium-crimson underline decoration-1 underline-offset-4">DOSSIER</span>
     </a>
-    <nav class="hidden md:block">
+        <nav class="hidden md:block">
       <ul class="flex space-x-10 text-[10px] font-black tracking-[0.4em] uppercase">
         <li><a href="index.html" class="hover:text-stadium-crimson transition-colors">Home</a></li>
-        <li><a href="formats.html" class="text-stadium-crimson underline decoration-2 underline-offset-8">Formats</a>
-        </li>
+        <li><a href="formats.html" class="text-stadium-crimson underline decoration-2 underline-offset-8">Formats</a></li>
         <li><a href="players.html" class="hover:text-stadium-crimson transition-colors">Players</a></li>
         <li><a href="gallery.html" class="hover:text-stadium-crimson transition-colors">Gallery</a></li>
-        <li><a href="quiz.html" class="hover:text-stadium-crimson transition-colors">Quiz</a></li>
+        <li><a href="legacy.html" class="hover:text-stadium-crimson transition-colors">Legacy</a></li>
       </ul>
     </nav>
+
+    <!-- Mobile Menu -->
+    <section class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle text-stadium-crimson">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-stadium-black border border-stadium-crimson/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+        <li><a href="index.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Home</a></li>
+        <li><a href="formats.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10 text-stadium-crimson">Formats</a></li>
+        <li><a href="players.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Players</a></li>
+        <li><a href="gallery.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Gallery</a></li>
+        <li><a href="legacy.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Legacy</a></li>
+      </ul>
+    </section>
   </header>
 
   <main>
-
+   
     <section class="min-h-screen flex flex-col justify-center px-8 lg:px-24">
       <header class="max-w-7xl animate-documentary-reveal">
         <p class="text-stadium-crimson font-black tracking-[1em] uppercase text-xs mb-6 block lg:mb-12">Established 2003
@@ -146,7 +161,7 @@
       </article>
     </section>
 
-
+   
     <section class="py-32 bg-stadium-black px-8 lg:px-24">
       <header class="mb-32 text-center lg:text-left">
         <h2
@@ -157,10 +172,10 @@
       </header>
 
       <section class="max-w-5xl mx-auto space-y-40 relative">
-
+      
         <section class="absolute left-0 lg:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 hidden md:block"></section>
 
-
+       
         <article class="flex flex-col lg:flex-row gap-12 items-center relative">
           <section class="lg:w-1/2 lg:text-right">
             <p class="font-display text-5xl text-stadium-crimson mb-2">2007</p>
@@ -174,7 +189,7 @@
           <section class="lg:w-1/2"></section>
         </article>
 
-
+       
         <article class="flex flex-col lg:flex-row-reverse gap-12 items-center relative">
           <section class="lg:w-1/2">
             <p class="font-display text-5xl text-stadium-crimson mb-2">2016</p>
@@ -188,7 +203,7 @@
           <section class="lg:w-1/2"></section>
         </article>
 
-
+       
         <article class="flex flex-col lg:flex-row gap-12 items-center relative">
           <section class="lg:w-1/2 lg:text-right">
             <p class="font-display text-5xl text-stadium-crimson mb-2">2024</p>
@@ -224,7 +239,7 @@
       </section>
     </section>
 
-
+    
     <footer class="bg-stadium-black py-24 px-8 border-t border-white/5">
       <section class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
         <section>
