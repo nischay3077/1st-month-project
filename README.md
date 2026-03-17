@@ -1,8 +1,10 @@
-# 🏏 Cricket Fanpage
+<h1 align="center">🏏 Cricket Fan Page</h1>
 
-![Cricket Fanpage Banner](readme.jpg)
+<p align="center">
+  <img src="readme.jpg" width="700"/>
+</p>
 
-Welcome to **Cricket Universe**, the ultimate digital stadium for cricket enthusiasts. This premium fan page celebrates the legends, records, and the unmatched energy of the gentleman's game with a state-of-the-art cinematic experience.
+Welcome to **Cricket Fanpage**, the ultimate digital stadium for cricket enthusiasts. This premium fan page celebrates the legends, records, and the unmatched energy of the gentleman's game with a state-of-the-art cinematic experience.
 
 ## ✨ Key Features
 
