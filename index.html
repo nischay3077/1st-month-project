@@ -78,14 +78,14 @@ class="fixed top-0 left-0 w-full h-full object-cover -z-10">
 
     <nav class="w-full px-4 h-20 flex items-center justify-between">
 
-      <a href="index.html"
+      <a href="index.html" onclick="playHomeSound()"
         class="font-sports text-4xl text-white hover:text-gold transition-all duration-300">
         CRICKET <span class="text-gold">Fanpage</span>
       </a>
 
       <!-- Desktop Menu -->
       <section class="hidden md:flex items-center space-x-6">
-        <a href="index.html"
+        <a href="index.html" onclick="playHomeSound()"
           class="text-xs font-semibold tracking-wider text-white/70 hover:text-gold uppercase">
           Home
         </a>
@@ -115,7 +115,7 @@ class="fixed top-0 left-0 w-full h-full object-cover -z-10">
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-navy-dark border border-gold/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest">
-          <li><a href="index.html" class="py-3 hover:text-gold active:bg-gold/10">Home</a></li>
+          <li><a href="index.html" onclick="playHomeSound()" class="py-3 hover:text-gold active:bg-gold/10">Home</a></li>
           <li><a href="formats.html" class="py-3 hover:text-gold active:bg-gold/10">Formats</a></li>
           <li><a href="players.html" class="py-3 hover:text-gold active:bg-gold/10">Players</a></li>
           <li><a href="gallery.html" class="py-3 hover:text-gold active:bg-gold/10">Gallery</a></li>
@@ -331,12 +331,21 @@ class="flex items-center gap-3 text-white hover:text-gold transition">
 var sound=document.getElementById("homeSound");
 
 window.addEventListener("load",function(){
-sound.play();
+  sound.play().catch(() => {
+    // If blocked by browser, wait for first interaction
+    const playOnInteract = () => {
+      sound.play();
+      document.removeEventListener('click', playOnInteract);
+      document.removeEventListener('touchstart', playOnInteract);
+    };
+    document.addEventListener('click', playOnInteract);
+    document.addEventListener('touchstart', playOnInteract);
+  });
 });
 
 function playHomeSound(){
-sound.currentTime=0;
-sound.play();
+  sound.currentTime=0;
+  sound.play();
 }
 
 </script>
