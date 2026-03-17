@@ -30,13 +30,11 @@ Every delivery, every boundary, and every legend is documented here. From the hi
 ## 🤝 Credits
 
 ### 👨‍💻 Created by
-[![Nischay Samant](https://img.shields.io/badge/Nischay_Samant-GitHub-001C3D?logo=github&logoColor=FFD700&style=for-the-badge)](https://github.com/nischaysamant)
-
+[![Nischay Samant](https://img.shields.io/badge/Nischay_Samant-GitHub-001C3D?logo=github&logoColor=FFD700&style=for-the-badge)](https://github.com/nischay3077)
 ### 🎓 Under the Guidance of
-[![Kunal Upadhyay](https://img.shields.io/badge/Kunal_Upadhyay-GitHub-red?logo=github&style=for-the-badge)](https://github.com/Kunal-Upadhyay) 
+[![Kunal Upadhyay](https://img.shields.io/badge/Kunal_Upadhyay-GitHub-red?logo=github&style=for-the-badge)](https://github.com/Kunal-Upadhyay)  
 [![Prateek Kumar](https://img.shields.io/badge/Prateek_Kumar-GitHub-red?logo=github&style=for-the-badge)](https://github.com/geeekdude)
 
----
 
 ## 📬 Contact the Developer
 
