@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Sharma | The Rising Titan Dossier</title>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    .stroke-text {
+      -webkit-text-stroke: 1px rgba(255, 215, 0, 0.3);
+      color: transparent;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Anton', 'sans-serif'],
+          },
+          colors: {
+            stadium: {
+              black: '#020617',
+              gold: '#EAB308',
+              crimson: '#E11D48',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-stadium-black text-white font-sans antialiased selection:bg-stadium-gold/30 overflow-x-hidden">
+
+
+  <video autoplay muted loop playsinline
+    class="fixed inset-0 w-full h-full object-cover -z-30 contrast-125 grayscale brightness-50 opacity-40">
+    <source src="test.mp4" type="video/mp4">
+  </video>
+  <section class="fixed inset-0 bg-gradient-to-b from-stadium-black via-transparent to-stadium-black -z-20"></section>
+  <section class="fixed inset-0 bg-stadium-black/60 -z-10"></section>
+
+
+  <header
+    class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center transition-all bg-stadium-black/20 backdrop-blur-md border-b border-white/5">
+    <a href="index.html" class="font-display text-4xl tracking-tighter hover:text-stadium-gold transition-colors group">
+      THE <span class="text-white">PERSONNEL</span><span
+        class="text-stadium-gold underline decoration-1 underline-offset-4">LOG</span>
+    </a>
+        <nav class="hidden md:block">
+      <ul class="flex space-x-10 text-[10px] font-black tracking-[0.4em] uppercase">
+        <li><a href="index.html" class="hover:text-stadium-gold transition-colors">Home</a></li>
+        <li><a href="formats.html" class="hover:text-stadium-gold transition-colors">Formats</a></li>
+        <li><a href="players.html" class="text-stadium-gold underline decoration-2 underline-offset-8">Players</a></li>
+        <li><a href="gallery.html" class="hover:text-stadium-gold transition-colors">Gallery</a></li>
+        <li><a href="legacy.html" class="hover:text-stadium-gold transition-colors">Legacy</a></li>
+      </ul>
+    </nav>
+
+    
+    <section class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle text-stadium-gold">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-stadium-black border border-stadium-gold/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+        <li><a href="index.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Home</a></li>
+        <li><a href="formats.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Formats</a></li>
+        <li><a href="players.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10 text-stadium-gold">Players</a></li>
+        <li><a href="gallery.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Gallery</a></li>
+        <li><a href="legacy.html" class="py-3 hover:text-stadium-gold active:bg-stadium-gold/10">Legacy</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="min-h-screen pt-32 flex flex-col justify-center px-8 lg:px-24">
+      <header class="max-w-7xl animate-fade-in">
+        <p class="text-stadium-gold font-black tracking-[1em] uppercase text-xs mb-6 block">Personnel Dossier
+          #44</p>
+        <h1 class="font-display text-[12vw] leading-[0.8] tracking-tighter uppercase mb-6">
+          ABHISHEK <br> <span class="stroke-text">SHARMA</span>
+        </h1>
+        <article class="flex flex-col lg:flex-row items-start gap-10 lg:gap-24 border-t border-white/10 pt-10">
+          <h2 class="font-display text-7xl lg:text-8xl leading-none text-stadium-gold italic">THE<br>INTENT</h2>
+          <section class="max-w-2xl">
+            <p class="text-white/50 text-xl lg:text-3xl font-light leading-relaxed mb-8 italic">
+              "Batting is not about occupying the crease; it's about dictating terms. If the ball is there to be hit,
+              it's gone."
+            </p>
+            <section class="h-1 w-full bg-white/5 relative overflow-hidden">
+              <section class="absolute h-full bg-stadium-gold w-[60%]"></section>
+            </section>
+          </section>
+        </article>
+      </header>
+    </section>
+
+    <section
+      class="min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-white text-stadium-black border-y-[20px] border-stadium-gold">
+      <figure class="relative h-[70vh] lg:h-full overflow-hidden">
+        <img src="https://i.pinimg.com/736x/0a/b6/20/0ab620197a9fe68a058e4e927b4bc6e3.jpg" alt="Abhishek Sharma"
+          class="w-full h-full object-cover contrast-125 grayscale brightness-90 shadow-2xl">
+        <section class="absolute inset-0 bg-stadium-gold/10 mix-blend-multiply"></section>
+      </figure>
+      <article class="p-12 lg:p-24 flex flex-col justify-center">
+        <h3 class="font-display text-7xl lg:text-9xl tracking-tighter mb-8 leading-none">THE <br><span
+            class="text-stadium-gold">SPEEDSTER</span></h3>
+        <p class="text-xl lg:text-3xl font-bold mb-8 leading-tight">Fearless intent. The next big thing in Indian T20
+          cricket.</p>
+        <p class="text-stadium-black/60 text-lg leading-relaxed mb-12">
+          Abhishek Sharma has redefined opening in the T20 format with his high-risk, high-reward approach. With a
+          strike rate that terrifies bowling attacks, he has quickly transitioned from a domestic stalwart to an
+          international asset. His 46-ball century for India is a testament to the raw aggression he brings to the
+          field.
+        </p>
+        <footer class="flex flex-wrap gap-12 border-t border-stadium-black/10 pt-8">
+          <section>
+            <p class="font-display text-5xl">100</p>
+            <p class="text-[9px] font-black uppercase tracking-widest text-stadium-black/40">OFF 46 BALLS (INTL)</p>
+          </section>
+          <section>
+            <p class="font-display text-5xl">200+</p>
+            <p class="text-[9px] font-black uppercase tracking-widest text-stadium-black/40">SRH STRIKE RATE</p>
+          </section>
+          <section>
+            <p class="font-display text-5xl">#1</p>
+            <p class="text-[9px] font-black uppercase tracking-widest text-stadium-black/40">INTENT INDEX</p>
+          </section>
+        </footer>
+      </article>
+    </section>
+
+
+    <section class="py-32 px-8 lg:px-24 bg-stadium-black">
+      <h2 class="font-display text-8xl lg:text-[12rem] tracking-tighter uppercase opacity-10 mb-12">HALL OF FAME
+      </h2>
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+        <article class="p-10 border border-white/5 hover:border-stadium-gold transition-all group">
+          <h4 class="font-display text-3xl mb-4 group-hover:text-stadium-gold">DEBUT CENTURY</h4>
+          <p class="text-white/40 text-sm leading-relaxed uppercase tracking-widest">Scored a sensational century in
+            only his second T20I appearance for India.</p>
+        </article>
+        <article class="p-10 border border-white/5 hover:border-stadium-gold transition-all group">
+          <h4 class="font-display text-3xl mb-4 group-hover:text-stadium-gold">IPL BREAKOUT</h4>
+          <p class="text-white/40 text-sm leading-relaxed uppercase tracking-widest">Instrumental in Sunrisers
+            Hyderabad's journey to the 2024 IPL final with record sixes.</p>
+        </article>
+        <article class="p-10 border border-white/5 hover:border-stadium-gold transition-all group">
+          <h4 class="font-display text-3xl mb-4 group-hover:text-stadium-gold">MULTI-TALENT</h4>
+          <p class="text-white/40 text-sm leading-relaxed uppercase tracking-widest">A versatile left-arm spinner and an
+            explosive top-order game-changer.</p>
+        </article>
+      </section>
+    </section>
+
+  
+    <section class="py-48 text-center bg-stadium-black border-t border-white/5">
+      <a href="players.html"
+        class="font-display text-6xl md:text-8xl hover:text-stadium-gold transition-all tracking-tighter uppercase">BACK
+        TO <span class="text-stadium-gold">HALL</span></a>
+    </section>
+  </main>
+
+
+  <footer class="bg-stadium-black py-24 px-8 border-t border-white/5">
+    <section class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
+      <section>
+        <h2 class="font-display text-6xl tracking-tighter">CRICKET<span class="text-stadium-gold">ARENA</span>
+        </h2>
+        <p class="text-[10px] font-black tracking-[0.8em] text-white/20 uppercase mt-4">Documentary Archive
+          &copy; 2026</p>
+      </section>
+      <nav class="grid grid-cols-2 gap-20 text-[10px] font-black tracking-[0.4em] uppercase text-white/30">
+        <section class="space-y-6">
+          <a href="index.html" class="block hover:text-white transition-colors">Archival</a>
+          <a href="formats.html" class="block hover:text-white transition-colors">Formats</a>
+          <a href="players.html" class="block text-stadium-gold">Players</a>
+        </section>
+        <section class="space-y-6">
+          <a href="gallery.html" class="block hover:text-white transition-colors">Visual Node</a>
+          <a href="legacy.html" class="block hover:text-white transition-colors">Legacy Intel</a>
+          <a href="#" class="block hover:text-white transition-colors">Legal Sync</a>
+        </section>
+      </nav>
+    </section>
+  </footer>
+
+</body>
+
+</html>

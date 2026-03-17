@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Infinite Over | Cricket Universe Grand Finale</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;700;900&family=Bebas+Neue&family=Space+Grotesk:wght@300;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Anton', 'sans-serif'],
+            sports: ['Bebas Neue', 'sans-serif'],
+            modern: ['Space Grotesk', 'sans-serif'],
+          },
+          animation: {
+            'slow-pan': 'slowPan 30s linear infinite',
+            'reveal-left': 'revealLeft 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards',
+            'reveal-right': 'revealRight 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards',
+            'glow-pulse': 'glowPulse 3s infinite ease-in-out',
+            'float-y': 'floatY 6s ease-in-out infinite',
+          },
+          keyframes: {
+            slowPan: {
+              '0%': { backgroundPosition: 'center 0%' },
+              '100%': { backgroundPosition: 'center 100%' },
+            },
+            revealLeft: {
+              '0%': { transform: 'translateX(-100%)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            revealRight: {
+              '0%': { transform: 'translateX(100%)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            glowPulse: {
+              '0%, 100%': { opacity: '0.3', filter: 'drop-shadow(0 0 5px #ef4444)' },
+              '50%': { opacity: '1', filter: 'drop-shadow(0 0 25px #ef4444)' },
+            },
+            floatY: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-black text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
+
+  
+  <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-red-900/40">
+    <nav class="max-w-[1600px] mx-auto px-10 h-20 flex items-center justify-between">
+
+   
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="font-sports text-2xl text-white">CRICKET</span>
+        <span class="font-sports text-2xl text-red-600">UNIVERSE</span>
+      </a>
+
+      
+            <section class="hidden xl:flex items-center gap-10 text-[11px] font-black uppercase tracking-[0.3em]">
+        <a href="index.html" class="text-zinc-400 hover:text-red-600 transition-colors">Home</a>
+        <a href="formats.html" class="text-zinc-400 hover:text-red-600 transition-colors">Formats</a>
+        <a href="players.html" class="text-zinc-400 hover:text-red-600 transition-colors">Players</a>
+        <a href="gallery.html" class="text-zinc-400 hover:text-red-600 transition-colors">Gallery</a>
+        <a href="legacy.html" class="text-red-600">Legacy</a>
+      </section>
+
+     
+      <section class="dropdown dropdown-end xl:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle text-red-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-black border border-red-900 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+          <li><a href="index.html" class="py-3 hover:text-red-600 active:bg-red-600/10">Home</a></li>
+          <li><a href="formats.html" class="py-3 hover:text-red-600 active:bg-red-600/10">Formats</a></li>
+          <li><a href="players.html" class="py-3 hover:text-red-600 active:bg-red-600/10">Players</a></li>
+          <li><a href="gallery.html" class="py-3 hover:text-red-600 active:bg-red-600/10">Gallery</a></li>
+          <li><a href="legacy.html" class="py-3 hover:text-red-600 active:bg-red-600/10 text-red-600">Legacy</a></li>
+        </ul>
+      </section>
+
+    </nav>
+  </header>
+
+  <main class="relative">
+    <section
+      class="h-screen relative flex items-center justify-center overflow-hidden bg-[url('red_black_cricket_bg.png')] bg-cover bg-fixed animate-slow-pan">
+      <section class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/80"></section>
+
+      <section class="relative z-10 text-center space-y-12">
+        <header class="overflow-hidden">
+          <h1
+            class="font-display text-[15vw] md:text-[12rem] leading-none uppercase tracking-tighter animate-reveal-left">
+            THE <span class="text-red-600">INFINITE</span> OVER
+          </h1>
+        </header>
+        <section class="flex items-center justify-center gap-8 animate-reveal-right [animation-delay:0.5s]">
+          <span class="h-px w-24 bg-red-600 opacity-50"></span>
+          <p class="text-zinc-400 font-modern text-xs md:text-xl tracking-[1em] uppercase font-light">
+            A Tribute to the Pioneers, Rebels & Kings
+          </p>
+          <span class="h-px w-24 bg-red-600 opacity-50"></span>
+        </section>
+      </section>
+
+      <section
+        class="absolute bottom-10 left-10 flex flex-col gap-2 font-black text-[9px] tracking-[1em] text-red-900 group">
+        <span class="group-hover:text-red-600 transition-colors uppercase">Scroll to Ascend</span>
+        <section class="h-24 w-px bg-red-900/30 overflow-hidden">
+          <section
+            class="h-full w-full bg-red-600 -translate-y-full group-hover:translate-y-0 transition-transform duration-1000">
+          </section>
+        </section>
+      </section>
+    </section>
+
+  
+    <section class="py-48 bg-zinc-950/20 backdrop-blur-xl border-y border-red-900/10">
+      <section class="max-w-[1400px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+        <article class="space-y-16">
+          <header class="space-y-4">
+            <span class="text-red-600 font-black text-[10px] tracking-[1.5em] uppercase">Era I: 1900 — 1970</span>
+            <h2 class="font-sports text-7xl md:text-9xl text-white uppercase leading-tight">THE <span
+                class="text-red-900 italic">PIONEERS</span></h2>
+          </header>
+          <p class="text-zinc-500 font-modern text-lg md:text-2xl leading-relaxed font-light">
+            In the age of white flannels and uncovered pitches, the game was a test of survival. Legends like <span
+              class="text-white border-b border-red-600 pb-1">Sunil Gavaskar</span> defined courage against fire, while
+            <span class="text-white border-b border-red-600 pb-1">Sir Viv Richards</span> brought a defiance that would
+            change the sport forever.
+          </p>
+          <section class="grid grid-cols-2 gap-10">
+            <article
+              class="p-8 border border-white/5 rounded-2xl bg-black transition-all hover:bg-red-950/10 hover:border-red-600/30">
+              <h4 class="font-sports text-3xl text-white mb-2 uppercase">Defiance</h4>
+              <p class="text-[10px] text-zinc-600 uppercase tracking-widest leading-relaxed font-bold">No Helmets. Just
+                Heart. The era of pure technical mastery.</p>
+            </article>
+            <article
+              class="p-8 border border-white/5 rounded-2xl bg-black transition-all hover:bg-red-950/10 hover:border-red-600/30">
+              <h4 class="font-sports text-3xl text-white mb-2 uppercase">Tradition</h4>
+              <p class="text-[10px] text-zinc-600 uppercase tracking-widest leading-relaxed font-bold">The birth of the
+                international obsession.</p>
+            </article>
+          </section>
+        </article>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <figure class="relative aspect-[3/4] rounded-[3rem] overflow-hidden shadow-2xl group border border-white/10">
+            <img src="https://i.pinimg.com/736x/43/2d/0b/432d0be010ac30a4622a6b035cc42097.jpg"
+              class="w-full h-full object-cover grayscale brightness-50 contrast-125 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000"
+              alt="Sunil Gavaskar">
+            <section class="absolute inset-0 bg-gradient-to-t from-red-950/40 to-transparent mix-blend-color-burn">
+            </section>
+            <figcaption
+              class="absolute bottom-6 left-6 p-4 bg-black/80 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p class="font-sports text-xl text-red-600 uppercase">Sunil Gavaskar</p>
+            </figcaption>
+          </figure>
+          <figure
+            class="relative aspect-[3/4] rounded-[3rem] overflow-hidden shadow-2xl group border border-white/10 lg:translate-y-12">
+            <img src="https://i.pinimg.com/1200x/cf/6f/d8/cf6fd80a1441b90626c249bed1f653d4.jpg"
+              class="w-full h-full object-cover grayscale brightness-50 contrast-125 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000"
+              alt="Sir Viv Richards">
+            <section class="absolute inset-0 bg-gradient-to-t from-red-950/40 to-transparent mix-blend-color-burn">
+            </section>
+            <figcaption
+              class="absolute bottom-6 left-6 p-4 bg-black/80 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p class="font-sports text-xl text-red-600 uppercase">Sir Viv Richards</p>
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+    </section>
+
+
+    <section class="py-48 px-10 overflow-hidden">
+      <section class="max-w-[1700px] mx-auto space-y-32">
+        <header class="flex flex-col md:flex-row justify-between items-end gap-10 border-b border-white/10 pb-20">
+          <section class="space-y-4">
+            <span class="text-red-600 font-black text-[10px] tracking-[1.5em] uppercase">Era II: 1980 — 2010</span>
+            <h2 class="font-display text-6xl md:text-9xl text-white uppercase tracking-tighter leading-tight">THE <span
+                class="text-red-600">GOLDEN</span> PANTHEON</h2>
+          </section>
+          <p
+            class="max-w-md text-zinc-600 text-[10px] font-black uppercase tracking-[0.4em] leading-relaxed italic pr-10 border-r border-red-600">
+            "The time when a miracle in 1983 led by Kapil Dev evolved into the global dominance of MS Dhoni and the
+            clinical shadow of Ricky Ponting."
+          </p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-white">
+         
+          <article
+            class="relative p-16 bg-zinc-950/40 border-l-4 border-red-600 group hover:bg-zinc-900 transition-all duration-500">
+            <span class="text-red-900 font-display text-7xl absolute top-6 right-6 opacity-20">83</span>
+            <h3 class="font-sports text-5xl text-white mb-6 uppercase">The Pride <span class="text-red-600">of 83</span>
+            </h3>
+            <p class="text-zinc-500 font-modern text-sm leading-relaxed mb-10">From <span class="text-white">Kapil
+                Dev's</span> impossible victory to the revolution of Indian cricket. The spirit of the underdog
+              redefined.</p>
+            <figure class="w-full h-48 overflow-hidden rounded-xl border border-white/5 mb-6">
+              <img src="https://i.pinimg.com/736x/fb/e9/67/fbe96794a849a3ce10e6f3fa6ebe5038.jpg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                alt="Kapil Dev">
+            </figure>
+            <section class="space-y-4 opacity-30 group-hover:opacity-100 transition-all font-bold">
+              <section class="flex justify-between items-center text-[10px] font-black uppercase">
+                <span>Kapil Dev</span>
+                <span class="text-red-600">Legendary Captain</span>
+              </section>
+            </section>
+          </article>
+
+          
+          <article
+            class="relative p-16 bg-zinc-950/40 border-l-4 border-red-900 group hover:bg-zinc-900 transition-all duration-500">
+
+            <span class="text-red-900 font-display text-7xl absolute top-6 right-6 opacity-20">
+              100
+            </span>
+
+            <h3 class="font-sports text-5xl text-white mb-6 uppercase">
+              The <span class="text-red-600">Eternal</span> God
+            </h3>
+
+            <p class="text-zinc-500 font-modern text-sm leading-relaxed mb-10">
+              <span class="text-white">Sachin Tendulkar.</span>
+              A name that became an era. 100 centuries and a billion expectations carried with unmatched grace.
+            </p>
+
+            <figure class="w-full h-48 overflow-hidden rounded-xl border border-white/5 mb-6">
+              <img src="https://i.pinimg.com/736x/78/41/9b/78419b7145e5b59c76530c7cde1fcc06.jpg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                alt="Sachin Tendulkar">
+            </figure>
+
+            <section class="space-y-4 opacity-30 group-hover:opacity-100 transition-all font-bold">
+
+              <section class="flex justify-between items-center text-[10px] uppercase">
+                <span>Sachin Tendulkar</span>
+                <span class="text-red-600">Master Blaster</span>
+              </section>
+
+            </section>
+
+          </article>
+
+          
+          <article
+            class="relative p-16 bg-zinc-950/40 border-l-4 border-red-600 group hover:bg-zinc-900 transition-all duration-500">
+
+            <span class="text-red-900 font-display text-7xl absolute top-6 right-6 opacity-20">
+              07
+            </span>
+
+            <h3 class="font-sports text-5xl text-white mb-6 uppercase">
+              The Master <span class="text-red-600">Tactician</span>
+            </h3>
+
+            <p class="text-zinc-500 font-modern text-sm leading-relaxed mb-10">
+              The fearless aura of <span class="text-white">MS Dhoni.</span>
+              A leader who transformed chaos into trophies with ice-cool composure.
+            </p>
+
+            <figure class="w-full h-48 overflow-hidden rounded-xl border border-white/5 mb-6">
+              <img src="https://i.pinimg.com/736x/6a/7b/1f/6a7b1ff63cb3ed1ec1feafe0c3fe1f04.jpg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                alt="MS Dhoni">
+            </figure>
+
+            <section class="space-y-4 opacity-30 group-hover:opacity-100 transition-all font-bold">
+
+              <section class="flex justify-between items-center text-[10px] uppercase">
+                <span>MS Dhoni</span>
+                <span class="text-red-600">World Cup Captain</span>
+              </section>
+
+            </section>
+
+          </article>
+
+        
+          <article
+            class="relative p-16 bg-zinc-950/40 border-l-4 border-red-900 group hover:bg-zinc-900 transition-all duration-500">
+
+            <span class="text-red-900 font-display text-7xl absolute top-6 right-6 opacity-20">
+              2WC
+            </span>
+
+            <h3 class="font-sports text-5xl text-white mb-6 uppercase">
+              The <span class="text-red-600">Punter's</span> Dominance
+            </h3>
+
+            <p class="text-zinc-500 font-modern text-sm leading-relaxed mb-10">
+              The clinical leadership of <span class="text-white">Ricky Ponting.</span>
+              An era where Australia ruled world cricket with unmatched aggression and precision.
+            </p>
+
+            <figure class="w-full h-48 overflow-hidden rounded-xl border border-white/5 mb-6">
+              <img src="https://i.pinimg.com/736x/62/47/9c/62479c9a3877b6b1c644bea2650f8041.jpg"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                alt="Ricky Ponting">
+            </figure>
+
+            <section class="space-y-4 opacity-30 group-hover:opacity-100 transition-all font-bold">
+
+              <section class="flex justify-between items-center text-[10px] uppercase">
+                <span>Ricky Ponting</span>
+                <span class="text-red-600">World Cup Champion</span>
+              </section>
+
+            </section>
+
+          </article>
+
+        </section> 
+      </section> 
+    </section> 
+   
+    <section class="min-h-screen py-40 relative flex items-center justify-center bg-black">
+
+      <section class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+        
+        <article class="relative">
+
+          <figure class="aspect-[4/5] overflow-hidden rounded-[3rem] border border-white/10 shadow-2xl">
+
+            <img src="https://i.pinimg.com/736x/21/47/0a/21470a87127fefe16e07d76fc7c613c8.jpg"
+              class="w-full h-full object-cover" alt="Virat Kohli">
+
+          </figure>
+
+        </article>
+
+
+        <article class="space-y-8 text-center lg:text-left">
+
+          <span class="text-red-600 font-black text-[10px] tracking-[1.5em] uppercase">
+            The Modern Peak
+          </span>
+
+          <h2 class="font-sports text-5xl md:text-7xl lg:text-[6rem] text-white uppercase leading-normal">
+
+            Dominance
+            <span class="text-red-600 italic">
+              Personified
+            </span>
+
+          </h2>
+
+          <p class="text-zinc-500 text-lg leading-relaxed max-w-lg">
+
+            Enter the era of <span class="text-white">Virat Kohli.</span>
+            An intensity that never fades.
+            A master of the chase who turned run-scoring into an art form.
+
+          </p>
+
+          <nav
+            class="flex flex-wrap gap-4 justify-center lg:justify-start text-red-600 uppercase text-xs tracking-widest">
+
+            <span class="border border-red-600/30 px-4 py-1">Intensity</span>
+            <span class="border border-red-600/30 px-4 py-1">Ambition</span>
+            <span class="border border-red-600/30 px-4 py-1">Legacy</span>
+
+          </nav>
+
+        </article>
+
+      </section>
+
+    </section>
+
+
+
+
+    <section class="py-48 bg-zinc-950 border-t border-red-900/40">
+
+      <section class="max-w-5xl mx-auto px-10 text-center space-y-16">
+
+        <h2 class="font-display text-4xl md:text-6xl lg:text-8xl text-white uppercase leading-tight">
+
+          THE STORY
+          <span class="text-red-600 underline decoration-red-900 underline-offset-8">
+            NEVER
+          </span>
+          ENDS
+
+        </h2>
+
+        <p class="text-zinc-500 text-lg tracking-widest uppercase">
+
+          You have traveled through eras and witnessed legends.
+          Cricket is more than a sport — it is a legacy.
+
+        </p>
+
+        <nav class="flex flex-col md:flex-row justify-center items-center gap-12 text-xs uppercase tracking-[0.4em]">
+
+          <a href="players.html" class="text-red-600 hover:text-white transition">
+            Relive The Icons
+          </a>
+
+          <a href="gallery.html" class="text-red-600 hover:text-white transition">
+            Capture The Vision
+          </a>
+
+          <a href="index.html" class="text-red-600 hover:text-white transition">
+            Return To Origin
+          </a>
+
+        </nav>
+
+      </section>
+
+    </section>
+
+    <section class="pt-32 opacity-20 text-center">
+      <p class="text-[9px] font-black tracking-[1.5em] text-zinc-700 uppercase">A Legendsphere Archive Production
+        &copy; 2026</p>
+    </section>
+
+  </main>
+
+
+  <footer class="bg-black border-t border-red-600 py-20 px-10">
+
+    <section class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between gap-16">
+
+    
+      <section class="max-w-md space-y-6">
+        <h2 class="font-sports text-5xl text-white">
+          CRICKET <span class="text-red-600">UNIVERSE</span>
+        </h2>
+
+        <p class="text-zinc-500 text-sm leading-relaxed">
+          The infinite passion of cricket captured across eras,
+          legends and unforgettable moments.
+        </p>
+      </section>
+
+    
+      <nav class="flex flex-col gap-4 text-sm uppercase tracking-widest">
+
+        <a href="index.html" class="hover:text-red-600 transition-colors">Home</a>
+        <a href="formats.html" class="hover:text-red-600 transition-colors">Formats</a>
+        <a href="players.html" class="hover:text-red-600 transition-colors">Players</a>
+        <a href="gallery.html" class="hover:text-red-600 transition-colors">Gallery</a>
+        <a href="legacy.html" class="hover:text-red-600 transition-colors">Legacy</a>
+
+      </nav>
+
+    </section>
+
+    <section class="mt-16 pt-10 border-t border-white/10 text-center text-xs text-zinc-600 uppercase tracking-widest">
+      © 2026 Cricket Universe
+    </section>
+
+  </footer>
+
+</body>
+
+</html>

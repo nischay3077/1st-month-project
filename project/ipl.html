@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The IPL Dossier | Cricket Universe Documentary</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    .stroke-text {
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+      color: transparent;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Anton', 'sans-serif'],
+          },
+          colors: {
+            stadium: {
+              black: '#050505',
+              crimson: '#E11D48', 
+              gray: '#1A1A1A',
+            }
+          },
+          animation: {
+            'documentary-reveal': 'docReveal 1.5s cubic-bezier(0.2, 0, 0.2, 1) forwards',
+            'line-grow': 'lineGrow 2.5s ease-out forwards',
+          },
+          keyframes: {
+            docReveal: {
+              '0%': { opacity: '0', transform: 'translateY(80px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            lineGrow: {
+              '0%': { width: '0%' },
+              '100%': { width: '100%' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-stadium-black text-white font-sans antialiased selection:bg-stadium-crimson/40 overflow-x-hidden">
+
+  
+  <video autoplay muted loop playsinline
+    class="fixed inset-0 w-full h-full object-cover -z-30 contrast-125 grayscale brightness-50">
+    <source src="test.mp4" type="video/mp4">
+  </video>
+
+ 
+  <section class="fixed inset-0 bg-gradient-to-b from-stadium-black/80 via-transparent to-stadium-black/90 -z-20">
+  </section>
+  <section class="fixed inset-0 bg-stadium-black/40 -z-10"></section>
+
+  
+  <header
+    class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center transition-all bg-stadium-black/20 backdrop-blur-sm border-b border-white/5">
+    <a href="index.html"
+      class="font-display text-4xl tracking-tighter hover:text-stadium-crimson transition-colors group">
+      THE <span class="text-white group-hover:text-white transition-colors">IPL</span><span
+        class="text-stadium-crimson underline decoration-1 underline-offset-4">DOSSIER</span>
+    </a>
+        <nav class="hidden md:block">
+      <ul class="flex space-x-10 text-[10px] font-black tracking-[0.4em] uppercase">
+        <li><a href="index.html" class="hover:text-stadium-crimson transition-colors">Home</a></li>
+        <li><a href="formats.html" class="text-stadium-crimson underline decoration-2 underline-offset-8">Formats</a></li>
+        <li><a href="players.html" class="hover:text-stadium-crimson transition-colors">Players</a></li>
+        <li><a href="gallery.html" class="hover:text-stadium-crimson transition-colors">Gallery</a></li>
+        <li><a href="legacy.html" class="hover:text-stadium-crimson transition-colors">Legacy</a></li>
+      </ul>
+    </nav>
+
+
+    <section class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-circle text-stadium-crimson">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-2xl bg-stadium-black border border-stadium-crimson/20 rounded-xl w-52 uppercase font-bold text-xs tracking-widest text-white">
+        <li><a href="index.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Home</a></li>
+        <li><a href="formats.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10 text-stadium-crimson">Formats</a></li>
+        <li><a href="players.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Players</a></li>
+        <li><a href="gallery.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Gallery</a></li>
+        <li><a href="legacy.html" class="py-3 hover:text-stadium-crimson active:bg-stadium-crimson/10">Legacy</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    
+    <section class="min-h-screen flex flex-col justify-center px-8 lg:px-24">
+      <header class="max-w-7xl animate-documentary-reveal">
+        <p class="text-stadium-crimson font-black tracking-[1em] uppercase text-xs mb-6 block lg:mb-12">Legacy 17
+          Seasons
+        </p>
+        <h1 class="font-display text-[14vw] lg:text-[12vw] leading-[0.8] tracking-tighter uppercase mb-6 lg:mb-10">
+          THE <br> <span class="stroke-text">GRAND</span> SPECTACLE
+        </h1>
+        <article class="flex flex-col lg:flex-row items-start gap-10 lg:gap-24 border-t border-white/10 pt-10">
+          <h2 class="font-display text-7xl lg:text-8xl leading-none text-stadium-crimson italic">INDIAN<br>PREMIER
+            LEAGUE</h2>
+          <section class="max-w-2xl">
+            <p class="text-white/50 text-xl lg:text-3xl font-light leading-relaxed mb-8">
+              Where talent meets opportunity. The biggest franchise T20 tournament in the world, redefining the economy
+              and culture of modern cricket.
+            </p>
+            <section class="h-1 w-full bg-white/5 relative overflow-hidden">
+              <section class="absolute h-full bg-stadium-crimson animate-line-grow"></section>
+            </section>
+          </section>
+        </article>
+      </header>
+    </section>
+
+    <section
+      class="min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-white text-stadium-black border-y-[20px] border-stadium-crimson">
+      <figure class="relative h-[50vh] lg:h-auto overflow-hidden">
+        <img src="ipl.jpg" alt="IPL Legacy" class="w-full h-full object-cover contrast-150 grayscale brightness-90">
+        <section class="absolute inset-0 bg-stadium-crimson/10 mix-blend-multiply"></section>
+        <section
+          class="absolute bottom-10 left-10 text-white font-display text-2xl tracking-widest bg-stadium-black p-4 uppercase">
+          EST. APRIL 2008
+        </section>
+      </figure>
+      <article class="p-12 lg:p-24 flex flex-col justify-center">
+        <h3 class="font-display text-7xl lg:text-9xl tracking-tighter mb-8 leading-none">THE <br><span
+            class="text-stadium-crimson">REVOLUTION</span></h3>
+        <p class="text-xl lg:text-2xl font-bold mb-8 leading-tight">The IPL is not just a league; it's a structural
+          shift in global sport.</p>
+        <p class="text-stadium-black/60 text-lg leading-relaxed mb-12">
+          In 2008, the cricketing world changed forever. City-based franchises, high-stakes auctions, and a blend of
+          Bollywood glamour and elite athleticism created a juggernaut that now rivals the world's top sporting leagues
+          in valuation and viewership.
+        </p>
+        <footer class="flex gap-12 border-t border-stadium-black/10 pt-8">
+          <section>
+            <p class="font-display text-5xl">5</p>
+            <p class="text-[9px] font-black uppercase tracking-widest text-stadium-black/40">MOST TITLES (MI & CSK)</p>
+          </section>
+          <section>
+            <p class="font-display text-5xl">8000+</p>
+            <p class="text-[9px] font-black uppercase tracking-widest text-stadium-black/40">MOST RUNS (VIRAT KOHLI)</p>
+          </section>
+        </footer>
+      </article>
+    </section>
+
+    <section class="py-32 bg-stadium-black px-8 lg:px-24">
+      <header class="mb-32 text-center lg:text-left">
+        <h2
+          class="font-display text-8xl lg:text-[12rem] tracking-tighter uppercase whitespace-nowrap opacity-10 leading-none">
+          TIMELINE</h2>
+        <h3 class="font-display text-6xl text-stadium-crimson relative z-10 -mt-12 lg:-mt-20 px-4">MILESTONES OF GLORY
+        </h3>
+      </header>
+
+      <section class="max-w-5xl mx-auto space-y-40 relative">
+        
+        <section class="absolute left-0 lg:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 hidden md:block"></section>
+
+       
+        <article class="flex flex-col lg:flex-row gap-12 items-center relative">
+          <section class="lg:w-1/2 lg:text-right">
+            <p class="font-display text-5xl text-stadium-crimson mb-2">2008</p>
+            <h4 class="font-display text-4xl mb-6">THE RAJASTHAN MIRACLE</h4>
+            <p class="text-white/40 leading-relaxed font-light italic">The underdogs Rajasthan Royals, led by Shane
+              Warne, win the first season, proving that strategy outweighs star power.</p>
+          </section>
+          <section
+            class="hidden lg:flex w-1 w-12 h-12 bg-stadium-crimson rounded-full items-center justify-center absolute left-1/2 -ml-6 border-8 border-stadium-black z-20">
+          </section>
+          <section class="lg:w-1/2"></section>
+        </article>
+
+      
+        <article class="flex flex-col lg:flex-row-reverse gap-12 items-center relative">
+          <section class="lg:w-1/2">
+            <p class="font-display text-5xl text-stadium-crimson mb-2">2013-2020</p>
+            <h4 class="font-display text-4xl mb-6">THE DECADE OF DYNAMICS</h4>
+            <p class="text-white/40 leading-relaxed font-light italic">The era of dominance for Mumbai Indians and CSK,
+              setting the gold standard for franchise management and team culture.</p>
+          </section>
+          <section
+            class="hidden lg:flex w-1 w-12 h-12 bg-stadium-crimson rounded-full items-center justify-center absolute left-1/2 -ml-6 border-8 border-stadium-black z-20">
+          </section>
+          <section class="lg:w-1/2"></section>
+        </article>
+
+       
+        <article class="flex flex-col lg:flex-row gap-12 items-center relative">
+          <section class="lg:w-1/2 lg:text-right">
+            <p class="font-display text-5xl text-stadium-crimson mb-2">2023</p>
+            <h4 class="font-display text-4xl mb-6">NEW LEGACIES</h4>
+            <p class="text-white/40 leading-relaxed font-light italic">MS Dhoni leads CSK to a fifth title in the
+              most-watched final in history, cementing his status as the format's ultimate leader.</p>
+          </section>
+          <section
+            class="hidden lg:flex w-1 w-12 h-12 bg-stadium-crimson rounded-full items-center justify-center absolute left-1/2 -ml-6 border-8 border-stadium-black z-20">
+          </section>
+          <section class="lg:w-1/2"></section>
+        </article>
+      </section>
+    </section>
+
+
+    <section class="py-48 bg-stadium-crimson relative">
+      <section class="max-w-7xl mx-auto px-8 lg:px-24 flex flex-col lg:flex-row items-center gap-20">
+        <header class="lg:w-2/3">
+          <h2 class="font-display text-8xl lg:text-[10rem] tracking-tighter leading-none mb-12">THE FRANCHISE <br> <span
+              class="text-white">WAR</span></h2>
+          <p
+            class="text-2xl lg:text-4xl font-black text-white/90 leading-tight border-b-8 border-white pb-12 uppercase italic">
+            "The IPL is where the world's best become city legends."</p>
+        </header>
+        <aside class="lg:w-1/3">
+          <ul class="space-y-8 font-display text-3xl tracking-widest">
+            <li class="flex items-center gap-6"><span class="w-8 h-1 bg-white"></span> 10 FRANCHISES</li>
+            <li class="flex items-center gap-6"><span class="w-8 h-1 bg-white"></span> WHITE CHERRY</li>
+            <li class="flex items-center gap-6"><span class="w-8 h-1 bg-white"></span> IMPACT PLAYER</li>
+            <li class="flex items-center gap-6"><span class="w-8 h-1 bg-white"></span> ORANGE CAP</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
+
+    
+    <footer class="bg-stadium-black py-24 px-8 border-t border-white/5">
+      <section class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-20">
+        <section>
+          <h2 class="font-display text-6xl tracking-tighter">THE <span class="text-stadium-crimson">IPL</span> HUB</h2>
+          <p class="text-[10px] font-black tracking-[0.8em] text-white/20 uppercase mt-4">Cinematic Experience &copy;
+            2026</p>
+        </section>
+        <nav class="grid grid-cols-2 gap-20 text-[10px] font-black tracking-[0.4em] uppercase text-white/30">
+          <section class="space-y-6">
+            <a href="index.html" class="block hover:text-white transition-colors">Surface</a>
+            <a href="formats.html" class="block hover:text-white transition-colors">Archives</a>
+            <a href="players.html" class="block hover:text-white transition-colors">Personnel</a>
+          </section>
+          <section class="space-y-6">
+            <a href="test.html" class="block hover:text-white transition-colors">Test Dossier</a>
+            <a href="odi.html" class="block hover:text-white transition-colors">ODI Dossier</a>
+            <a href="t20.html" class="block hover:text-white transition-colors">T20 Signal</a>
+          </section>
+        </nav>
+      </section>
+      <section class="mt-24 pt-12 border-t border-white/5 text-center">
+        <a href="formats.html"
+          class="font-display text-4xl text-white/5 hover:text-stadium-crimson transition-all duration-700 tracking-[1em] uppercase">EXIT
+          ARENA</a>
+      </section>
+    </footer>
+  </main>
+
+</body>
+
+</html>
