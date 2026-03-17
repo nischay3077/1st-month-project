@@ -1,4 +1,4 @@
-# 🏏 Cricket Universe | Premium Fan Experience
+# 🏏 Cricket Fanpage
 
 ![Cricket Fanpage Banner](readme.jpg)
 
