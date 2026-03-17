@@ -19,6 +19,27 @@
       -webkit-text-stroke: 1px rgba(255, 215, 0, 0.3);
       color: transparent;
     }
+    @media (max-width: 767px) {
+      header {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 1rem !important;
+        gap: 0.75rem !important;
+      }
+      header nav.hidden.md\:block {
+        display: block !important;
+        width: 100% !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        padding-top: 0.5rem !important;
+      }
+      header nav ul {
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 1.25rem !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+      }
+    }
   </style>
   <script>
     tailwind.config = {
